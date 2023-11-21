@@ -11,6 +11,5 @@ RUN pip install vllm==0.2.2
 RUN pip config set global.index-url https://pypi.mirrors.ustc.edu.cn/simple/
 RUN pip install --no-cache-dir -r /workspace/requirements.txt
 RUN pip install bitsandbytes --upgrade && \
-    pip install torch==2.0.1 && \
     pip install xformers --no-deps && \
     pip uninstall transformer-engine -y
